@@ -1,5 +1,4 @@
 import {
-  ConnectButton,
   getDefaultWallets,
   RainbowKitProvider,
 } from "@rainbow-me/rainbowkit";
@@ -21,11 +20,11 @@ import { useState } from "react";
 import SafeDelegateDetails from "components/SafeDelegateDetails";
 
 const { chains, provider } = configureChains(
-  [chain.mainnet, chain.goerli, chain.polygon, chain.optimism, chain.arbitrum],
+  [chain.mainnet, chain.goerli],
   [publicProvider()]
 );
 const { connectors } = getDefaultWallets({
-  appName: "My RainbowKit App",
+  appName: "Safe Delegator",
   chains,
 });
 const wagmiClient = createClient({
