@@ -2,6 +2,7 @@
   "name": "safe-delagator",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "dependencies": {
     "@heroicons/react": "^2.0.13",
     "@rainbow-me/rainbowkit": "^0.8.0",
