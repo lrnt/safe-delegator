@@ -4,13 +4,13 @@ import {
 } from "@rainbow-me/rainbowkit";
 import {
   Address,
-  chain,
   configureChains,
   createClient,
   useAccount,
   useNetwork,
   WagmiConfig,
 } from "wagmi";
+import { mainnet, goerli, gnosis } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
 
 import SafeList from "components/SafeList";
@@ -20,7 +20,7 @@ import { useState } from "react";
 import SafeDelegateDetails from "components/SafeDelegateDetails";
 
 const { chains, provider } = configureChains(
-  [chain.mainnet, chain.goerli],
+  [mainnet, goerli, gnosis],
   [publicProvider()]
 );
 const { connectors } = getDefaultWallets({

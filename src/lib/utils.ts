@@ -5,6 +5,7 @@ import { Address } from "wagmi";
 const SAFE_SERVICE_URLS = {
   1: "https://safe-transaction.mainnet.gnosis.io",
   5: "https://safe-transaction.goerli.gnosis.io",
+  100: "https://safe-transaction-gnosis-chain.safe.global/",
 };
 
 export type ChainId = keyof typeof SAFE_SERVICE_URLS;
